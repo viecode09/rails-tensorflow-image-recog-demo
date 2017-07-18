@@ -8,17 +8,18 @@ This is a demo project, based at Ruby-on-Rails, gRPC and tensorflow. The prototy
 * Git clone the repository to your local site.
 
 * cd rails-tensorflow-image-recog-demo.
-*
+
 * Add your server ip address into config/environment/developments.rb:
 * config.server_ip = your_server_ip_address (it is 192.168.0.3, on my case)
 * Add it into production.rb and test.rb if you need, as well.
-*
+
 * Open a console then input: bin/setup
+* It stops with displaying "== Restarting application server =="
 * Open another console and input: bin/rails s -b your_server_ip_address (on my case, it is 192.168.0.3)
-*
+
 * Open a browser: [http://your_server_ip_address:3000], (the address is 192.168.0.3, on my case).
 * Press "Welcome to My AI system".
-*
+
 * You can download some pictures from internet into a folder at your device.
 * Press "Choose File", go to the folder your pictures is stored, select one, press "Open".
 * Press "Recognizing".
