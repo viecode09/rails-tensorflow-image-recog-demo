@@ -1,0 +1,12 @@
+<p>
+  <strong>Please choose an image</strong>
+</p>
+
+<%= form_for @image do |f| %>
+  <%= f.file_field :title %>
+  <%= submit_tag 'Recognizing' %>
+<% end %>
+
+<br>
+
+<%= link_to 'Back', images_path %>

@@ -1,0 +1,10 @@
+<p> <%= image_tag 'timg.jpg', width:"360", height:"328" %> </p>
+
+<table>
+
+  <% @images.each do |image| %>
+    <tr>
+      <td><strong><%= link_to 'Welcome to My AI system', image_path(image) %></strong></td>
+    </tr>
+  <% end %>
+</table>

@@ -1,0 +1,33 @@
+<h1> Image to recognize </h1>
+
+<!--<p> <%= image_tag @image.title %> </p>-->
+
+<div id="ai_op">
+  <%= @srv_ip = "#{Rails.application.config.server_ip}" %>
+  <%= @server_ip = @srv_ip.concat(":3000") %>
+  <%= @http_pre = "http://" %>
+  <%= @http_svr = @http_pre.concat("#{@server_ip}") %>
+  <%= @local_url = @http_svr.concat('/uploads/') %>
+  <%= @image_path = @local_url.concat("#{@image.title}") %>
+  <%= @ai=@image.text %>
+  <%= @ai_str = @ai.split('$')%>
+</div>
+
+<script>
+var img = document.getElementById("ai_op");
+img.style.display = "inline";
+setTimeout(function() {img.style.display = "none";},0);
+</script>
+
+<p>
+  <%= image_tag @image_path %> <br>
+</p>
+
+<h2>AI's recognization </h2>
+
+<p>
+  <%= @ai_str[0]%> <br>
+  <%= @ai_str[1]%>
+</p>
+
+<%= link_to 'Back', images_path %>
