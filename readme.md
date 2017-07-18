@@ -11,8 +11,8 @@ This is a demo project, based at Ruby-on-Rails, gRPC and tensorflow. The prototy
 
 * Add your server ip address into config/environment/developments.rb:
 
-  config.server_ip = your_server_ip_address (it is 192.168.0.3, on my case)
-  Add it into production.rb and test.rb if you need, as well.
+  - config.server_ip = your_server_ip_address (it is 192.168.0.3, on my case)
+  - Add it into production.rb and test.rb if you need, as well.
 
 * Open a console then input:
 
